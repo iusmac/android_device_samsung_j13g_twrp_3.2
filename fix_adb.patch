@@ -1,0 +1,13 @@
+diff --git a/etc/init.recovery.usb.rc b/etc/init.recovery.usb.rc
+index 8ef20e0ec..229cc1158 100644
+--- a/etc/init.recovery.usb.rc
++++ b/etc/init.recovery.usb.rc
+@@ -3,6 +3,7 @@ on fs
+     write /sys/class/android_usb/android0/idVendor 18D1
+     write /sys/class/android_usb/android0/idProduct D001
+     write /sys/class/android_usb/android0/f_ffs/aliases adb
++    write /sys/class/android_usb/android0/f_acm/instances 0
+     write /sys/class/android_usb/android0/functions adb
+     write /sys/class/android_usb/android0/iManufacturer ${ro.product.manufacturer}
+     write /sys/class/android_usb/android0/iProduct ${ro.product.model}
+
